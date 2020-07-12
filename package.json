@@ -1,6 +1,6 @@
 {
   "name": "@esatterwhite/eslint-config-reasonable",
-  "version": "0.0.0",
+  "version": "1.0.2",
   "description": "ESLint config with reasonable comma first settings",
   "main": "index.js",
   "scripts": {
