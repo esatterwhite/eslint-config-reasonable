@@ -1,16 +1,18 @@
-{
-  "branches": ["master"]
-, "plugins": [
+'use strict'
+
+module.exports = {
+  branches: ["master"]
+, plugins: [
     ["@semantic-release/commit-analyzer", null]
   , ["@semantic-release/release-notes-generator", null]
   , ["@semantic-release/changelog", {
-      "changelogFile": "CHANGELOG.md"
+      changelogFile: "CHANGELOG.md"
     }]
   , ["@semantic-release/npm", {
-      "npmPublish": true
+      npmPublish: true
     }]
   , ["@semantic-release/git", {
-      "assets": [
+      assets: [
         "package.json"
       , "package-lock.json"
       , "CHANGELOG.md"
