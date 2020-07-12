@@ -1,0 +1,4 @@
+*.tgz
+release.config.json
+node_modules/
+test/

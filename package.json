@@ -1,0 +1,59 @@
+{
+  "name": "@esatterwhite/eslint-config-reasonable",
+  "version": "0.0.0",
+  "description": "ESLint config with reasonable comma first settings",
+  "main": "index.js",
+  "scripts": {
+    "test": "tap",
+    "release": "semantic-release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/esatterwhite/eslint-config-reasonable.git"
+  },
+  "keywords": [
+    "eslint",
+    "config"
+  ],
+  "author": "Eric Satterwhite <esatterwhite@wi.rr.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/esatterwhite/eslint-config-reasonable/issues"
+  },
+  "homepage": "https://github.com/esatterwhite/eslint-config-reasonable#readme",
+  "devDependencies": {
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/git": "^9.0.0",
+    "eslint": "^7.4.0",
+    "semantic-release": "^17.1.1",
+    "tap": "^14.10.7"
+  },
+  "dependencies": {
+    "@semantic-release/github": "^7.0.7",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-sensible": "^2.2.0"
+  },
+  "tap": {
+    "100": true,
+    "esm": false,
+    "ts": false,
+    "jsx": false,
+    "browser": false,
+    "coverage": true,
+    "check-coverage": true,
+    "files": [
+      "test/"
+    ],
+    "coverage-report": [
+      "text",
+      "json",
+      "html"
+    ],
+    "nyc-arg": [
+      "--exclude=env/",
+      "--exclude=doc/",
+      "--exclude=coverage/",
+      "--exclude=comopose/"
+    ]
+  }
+}
