@@ -22,7 +22,7 @@ Add a `eslintConfig` block to you package.json
 {
   "eslintConfig": {
     "root": true,
-    "extends": "@answerbook/eslint-config-logdna",
+    "extends": "@answerbook/eslint-config-reasonable",
     "ignorePatterns": [
       "node_modules/"
     ]
