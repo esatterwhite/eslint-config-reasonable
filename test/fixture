@@ -1,38 +1,3 @@
-# eslint-config-reasonable
-
-eslint config with reasonable comma first settings for node.js projects
-
-### Features
-
-* accurate alignment of commas w/ comma first style
-* validation of error handling in callbacks
-* Require validation (required packages must be in package.js)
-
-### Installation
-
-```bash
-> npm install @esatterwhite/eslint-config-reasonable
-```
-
-### Config Installation
-
-Add a `eslintConfig` block to you package.json
-
-```javascript
-{
-  "eslintConfig": {
-    "root": true,
-    "extends": "@answerbook/eslint-config-logdna",
-    "ignorePatterns": [
-      "node_modules/"
-    ]
-  }
-}
-```
-
-### Example
-
-```javascript
 'use strict'
 
 const path = require('path')
@@ -104,4 +69,3 @@ module.exports = {
 , doWork
 , plugin
 }
-```
